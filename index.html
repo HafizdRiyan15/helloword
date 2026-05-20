@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0a0a0a;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 12vw;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            background: linear-gradient(135deg, #ff6ec7, #ff4500, #ffd700, #00e5ff, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 0 30px rgba(255, 110, 199, 0.6))
+                    drop-shadow(0 0 60px rgba(0, 229, 255, 0.4));
+            text-align: center;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { filter: drop-shadow(0 0 30px rgba(255, 110, 199, 0.6)) drop-shadow(0 0 60px rgba(0, 229, 255, 0.4)); }
+            50% { filter: drop-shadow(0 0 60px rgba(255, 110, 199, 1)) drop-shadow(0 0 100px rgba(0, 229, 255, 0.8)); }
+        }
+    </style>
 </head>
 <body>
     <h1>Hello World</h1>
